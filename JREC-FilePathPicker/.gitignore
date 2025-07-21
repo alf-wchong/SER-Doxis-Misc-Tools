@@ -1,0 +1,39 @@
+# Eclipse project files
+.project
+.classpath
+.settings/
+bin/
+
+# Compiled Java class files
+*.class
+
+# Maven & Gradle build outputs (include if you ever use Maven/Gradle)
+target/
+build/
+.gradle/
+out/
+
+# Logs
+*.log
+
+# AWS credentials and config (never store these in your repo)
+*.aws/
+.aws/
+aws-credentials*
+aws-config*
+**/.aws/credentials
+**/.aws/config
+
+# Editor/OS-generated files
+.DS_Store
+Thumbs.db
+
+# Java error files
+hs_err_pid*
+replay_pid*
+
+# JAR/WAR/EAR build outputs
+*.jar
+*.war
+*.ear
+
