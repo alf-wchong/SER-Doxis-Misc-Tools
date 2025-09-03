@@ -2,6 +2,8 @@
 
 This Java Maven project implements RSA password encryption using a public key fetched from a REST API endpoint.
 
+An encrypted password is required to [change or set the password for Doxis users using Doxis ReST APIs](http://uk.exploredoxis.com:8080/restws/swagger-ui/#/Orga%20Service/changePassword).
+
 ## Project Structure
 
 ```
