@@ -10,18 +10,16 @@ password-encryption/
 ├── src/
 │   ├── main/
 │   │   └── java/
-│   │       └── com/
-│   │           └── example/
-│   │               └── passwordencryption/
-│   │                   ├── Main.java
-│   │                   ├── PublicKeyFetcher.java
-│   │                   └── PasswordEncryptor.java
+│   │       └── chongwm/
+│   │           └── passwordencryption/
+│   │               ├── Main.java
+│   │               ├── PublicKeyFetcher.java
+│   │               └── PasswordEncryptor.java
 │   └── test/
 │       └── java/
-│           └── com/
-│               └── example/
-│                   └── passwordencryption/
-│                       └── PasswordEncryptorTest.java
+│           └── chongwm/
+│               └── passwordencryption/
+│                   └── PasswordEncryptorTest.java
 └── README.md
 ```
 
@@ -90,17 +88,17 @@ java -jar target/password-encryption-1.0-SNAPSHOT.jar "MySecret123" "http://loca
 java -jar target/password-encryption-1.0-SNAPSHOT.jar "MySecret123" "https://prod-server.com:9090"
 
 # Using Maven exec plugin
-mvn exec:java -Dexec.mainClass="com.example.passwordencryption.Main" -Dexec.args="\"MyPassword123\" \"http://localhost:8080\""
+mvn exec:java -Dexec.mainClass="chongwm.passwordencryption.Main" -Dexec.args="\"MyPassword123\" \"http://localhost:8080\""
 ```
 
 ### Running with Maven
 
 ```bash
 # With default host
-mvn exec:java -Dexec.mainClass="com.example.passwordencryption.Main" -Dexec.args="\"YourPassword\""
+mvn exec:java -Dexec.mainClass="chongwm.passwordencryption.Main" -Dexec.args="\"YourPassword\""
 
 # With custom host
-mvn exec:java -Dexec.mainClass="com.example.passwordencryption.Main" -Dexec.args="\"YourPassword\" \"http://your-host:8080\""
+mvn exec:java -Dexec.mainClass="chongwm.passwordencryption.Main" -Dexec.args="\"YourPassword\" \"http://your-host:8080\""
 ```
 
 ## How It Works
