@@ -1,4 +1,4 @@
-# Password Encryption Maven Project
+# Password Encryptor for Doxis Users
 
 This Java Maven project implements RSA password encryption using a public key fetched from a REST API endpoint.
 
