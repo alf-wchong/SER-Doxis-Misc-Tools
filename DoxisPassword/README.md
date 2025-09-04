@@ -132,8 +132,6 @@ The code handles multiple possible JSON response formats:
 - `{"publicKey": "base64-key"}`
 - `{"key": "base64-key"}`
 
-Adjust the parsing logic in `PublicKeyFetcher.java` if your API uses a different format.
-
 ## Error Handling
 
 The application provides detailed error messages for:
@@ -150,3 +148,7 @@ The application provides detailed error messages for:
 - Always use HTTPS in production environments
 - Consider key validation and error handling for production use
 - Passwords are passed as command-line arguments (be aware of shell history)
+
+## Disclaimer
+
+This utility is provided "as is" without any warranties, express or implied. The author and the company he works for expressly disclaim any and all liability for any damages, losses, or other consequences that may result from the use or misuse of this software. Use of this utility is at your own risk. Neither the author nor his employer assumes any responsibility or liability for any errors, omissions, or outcomes related to its usage in any environment, including but not limited to production, testing, or development. By using this utility, you acknowledge and agree to these terms.
