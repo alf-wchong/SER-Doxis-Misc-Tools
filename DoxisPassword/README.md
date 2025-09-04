@@ -75,7 +75,7 @@ java -jar target/password-encryption-1.0-SNAPSHOT.jar <password> [host]
 **Arguments:**
 - `password` (required) - The password to encrypt
 - `host` (optional) - The host URL for the public key API
-  - Default: `http://jll-dev.exploredoxis.com:8080`
+  - Default: `http://uk.exploredoxis.com:8080`
 
 ### Examples
 
@@ -108,7 +108,7 @@ mvn exec:java -Dexec.mainClass="chongwm.passwordencryption.Main" -Dexec.args="\"
 The application will:
 1. Parse command line arguments for password and optional host
 2. Fetch the public key from: `{host}/restws/publicws/rest/api/v1/publicKey`
-   - Default host: `http://jll-dev.exploredoxis.com:8080`
+   - Default host: `http://uk.exploredoxis.com:8080`
 3. Encrypt the provided password using RSA encryption
 4. Display the encrypted result in Base64 format
 
