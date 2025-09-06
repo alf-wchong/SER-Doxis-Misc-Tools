@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-gui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: java-gui
+  template:
+    metadata:
+      labels:
+        app: java-gui
+    spec:
+      containers:
+      - name: java-gui-container
+        image: your-repository/beheadedjavagui:latest
+        ports:
+        - containerPort: 5901
